@@ -77,21 +77,58 @@ html{
 
 // Custom classes
 
-.main_container {
-    background-color: $card_background;
-    justify-self: center;
-    align-self: center;
-    min-height: 29rem;
-    max-width: 70rem;
-}
+
 
 .page_body {
     background-color: $main_background;
+    position: relative;
 }
-
-.attribution {
-    font-size: 11px; text-align: center;
-    a {
-        color: $attribution_color;
+.main_container {
+    background-color: $card_background;
+    position: absolute;
+    min-height: 29rem;
+    max-width: 70rem;
+    left: 12.5rem;
+    top: 9.625rem;
+}
+.team_play {
+    background: cover;
+}
+.description_stats {
+    padding: 5rem 1rem 0 4rem;
+    max-width: 35rem;
+    --gap: 4rem;
+    .grow_business {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        >p {
+            color: $main_heading_stats;
+            >span {
+               color: $accent;
+            }
+        }
+    }
+    
+    .analytics_text {
+        >p {
+            font-size: 0.9375rem;
+            font-family: 'Inter' sans-serif;
+            font-weight: 400;
+        }
+        
     }
 }
+
+.page_footer {
+    position: absolute;
+    top: 40rem;
+    .attribution {
+        font-size: 11px; 
+        text-align: center;
+        a {
+            color: $attribution_color;
+        }
+    }
+}
+    

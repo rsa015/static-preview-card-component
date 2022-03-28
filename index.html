@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" rel="stylesheet"/>
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  
   <link rel="stylesheet" href = "./index.css"/>
   
   <title>Frontend Mentor | Stats preview card component</title>
@@ -15,29 +21,30 @@
 <body class = "page_body">
   <main class = "main_container flex">
     <div class = "description_stats grid">
-      <div>
-        Get insights that help your business grow.
+      <div class="grow_business">
+        <p>Get <span>insights</span> that help your business grow.</p>
       </div>
       <div class = "analytics_text">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-        experience, and overall efficiency.
+        <p>
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.
+        </p>
       </div>
       <div class = "main_stats flex">
-        10k+ companies
-        314 templates
-        12m+ queries
+        <div class = "companies">10k+ <span>companies</span></div>
+        <div class = "templates">314 <span>templates</span></div>
+        <div class = "queries">12m+ <span>queries</span></div>
       </div>
     </div>
     <div class = "team_play">
       <img src = "./images/image-header-desktop.jpg" alt = "team_work">
     </div>
-    
   </main>
-  <footer class = "page_footer">
+  <footer class = "page_footer flex">
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Your Name Here</a>.
-      </div>
+    </div>
   </footer>
 </body>
 </html>

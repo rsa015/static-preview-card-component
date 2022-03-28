@@ -62,23 +62,55 @@ html {
   --gap: var(gap; 0rem);
 }
 
-.main_container {
-  background-color: #1b1938;
-  justify-self: center;
-  align-self: center;
-  min-height: 29rem;
-  max-width: 70rem;
-}
-
 .page_body {
   background-color: #090b1a;
+  position: relative;
 }
 
-.attribution {
+.main_container {
+  background-color: #1b1938;
+  position: absolute;
+  min-height: 29rem;
+  max-width: 70rem;
+  left: 12.5rem;
+  top: 9.625rem;
+}
+
+.team_play {
+  background: cover;
+}
+
+.description_stats {
+  padding: 5rem 1rem 0 4rem;
+  max-width: 35rem;
+  --gap: 4rem;
+}
+.description_stats .grow_business {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.description_stats .grow_business > p {
+  color: white;
+}
+.description_stats .grow_business > p > span {
+  color: #aa5cdb;
+}
+.description_stats .analytics_text > p {
+  font-size: 0.9375rem;
+  font-family: "Inter" sans-serif;
+  font-weight: 400;
+}
+
+.page_footer {
+  position: absolute;
+  top: 40rem;
+}
+.page_footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+.page_footer .attribution a {
   color: #3e52a3;
 }
 

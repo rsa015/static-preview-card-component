@@ -87,18 +87,22 @@ html{
     background-color: $card_background;
     position: absolute;
     min-height: 29rem;
-    max-width: 70rem;
+    min-width: 70rem;
     left: 12.5rem;
     top: 9.625rem;
+    border-radius: .5rem;
 }
 .team_play {
-    background: cover;
+    background: no-repeat;
+    min-width: 35rem;
+    align-items: flex-end;
 }
 .description_stats {
-    padding: 5rem 1rem 0 4rem;
+    padding: 3rem 1rem 0 4rem;
     max-width: 35rem;
     --gap: 4rem;
     .grow_business {
+        max-width: 22rem;
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         font-size: 2rem;
@@ -109,14 +113,38 @@ html{
             }
         }
     }
-    
     .analytics_text {
+        max-width: 22rem;
         >p {
+            color: $main_paragraph;
             font-size: 0.9375rem;
-            font-family: 'Inter' sans-serif;
+            font-family: 'Inter', sans-serif;;
             font-weight: 400;
+        }  
+    }
+
+    .main_stats {
+        // background-color: black;
+        align-items: center;
+        color:hsl(0, 0%, 100%);
+        gap: 4rem;
+        .companies {
+            >span{
+                text-transform: uppercase;
+                color: $main_heading_stats;
+            } 
         }
-        
+        .templates {
+            text-transform: uppercase;
+            >span{
+                text-transform: uppercase;
+            }
+        }
+        .queries {
+            >span{
+                text-transform: uppercase;
+            }
+        }
     }
 }
 

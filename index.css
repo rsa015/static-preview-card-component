@@ -71,21 +71,25 @@ html {
   background-color: #1b1938;
   position: absolute;
   min-height: 29rem;
-  max-width: 70rem;
+  min-width: 70rem;
   left: 12.5rem;
   top: 9.625rem;
+  border-radius: 0.5rem;
 }
 
 .team_play {
-  background: cover;
+  background: no-repeat;
+  min-width: 35rem;
+  align-items: flex-end;
 }
 
 .description_stats {
-  padding: 5rem 1rem 0 4rem;
+  padding: 3rem 1rem 0 4rem;
   max-width: 35rem;
   --gap: 4rem;
 }
 .description_stats .grow_business {
+  max-width: 22rem;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -96,10 +100,32 @@ html {
 .description_stats .grow_business > p > span {
   color: #aa5cdb;
 }
+.description_stats .analytics_text {
+  max-width: 22rem;
+}
 .description_stats .analytics_text > p {
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.9375rem;
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
+}
+.description_stats .main_stats {
+  align-items: center;
+  color: white;
+  gap: 4rem;
+}
+.description_stats .main_stats .companies > span {
+  text-transform: uppercase;
+  color: white;
+}
+.description_stats .main_stats .templates {
+  text-transform: uppercase;
+}
+.description_stats .main_stats .templates > span {
+  text-transform: uppercase;
+}
+.description_stats .main_stats .queries > span {
+  text-transform: uppercase;
 }
 
 .page_footer {

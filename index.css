@@ -70,27 +70,30 @@ html {
 .main_container {
   background-color: #1b1938;
   position: absolute;
-  min-height: 29rem;
-  min-width: 70rem;
-  left: 12.5rem;
+  max-height: 29rem;
+  max-width: 70rem;
+  left: 15rem;
   top: 9.625rem;
   border-radius: 0.5rem;
 }
 
 .team_play {
-  background: no-repeat;
-  min-width: 35rem;
-  align-items: flex-end;
+  width: 35rem;
+  height: 29rem;
+  background: linear-gradient(0deg, rgba(18, 9, 77, 0.54), rgba(110, 17, 153, 0.69)), url(./images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .description_stats {
-  padding: 3rem 1rem 0 4rem;
   max-width: 35rem;
-  --gap: 4rem;
+  gap: 1rem;
 }
 .description_stats .grow_business {
-  max-width: 22rem;
+  padding: 3rem 1rem 0 3rem;
   font-family: "Inter", sans-serif;
+  width: 25rem;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -101,7 +104,8 @@ html {
   color: #aa5cdb;
 }
 .description_stats .analytics_text {
-  max-width: 22rem;
+  padding: 3rem 1rem 0 3rem;
+  width: 25rem;
 }
 .description_stats .analytics_text > p {
   color: rgba(255, 255, 255, 0.75);
@@ -112,20 +116,29 @@ html {
 .description_stats .main_stats {
   align-items: center;
   color: white;
-  gap: 4rem;
+  gap: 7rem;
+  margin-inline: 2rem;
 }
 .description_stats .main_stats .companies > span {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9375rem;
   text-transform: uppercase;
-  color: white;
-}
-.description_stats .main_stats .templates {
-  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
 }
 .description_stats .main_stats .templates > span {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9375rem;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
 }
 .description_stats .main_stats .queries > span {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9375rem;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .page_footer {

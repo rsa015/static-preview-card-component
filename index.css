@@ -88,10 +88,10 @@ html {
 
 .description_stats {
   max-width: 35rem;
-  gap: 1rem;
+  place-items: center;
+  margin-inline: 4rem;
 }
 .description_stats .grow_business {
-  padding: 3rem 1rem 0 3rem;
   font-family: "Inter", sans-serif;
   width: 25rem;
   font-weight: 700;
@@ -104,38 +104,53 @@ html {
   color: #aa5cdb;
 }
 .description_stats .analytics_text {
-  padding: 3rem 1rem 0 3rem;
-  width: 25rem;
+  width: 24rem;
 }
 .description_stats .analytics_text > p {
   color: rgba(255, 255, 255, 0.75);
+  place-items: start;
   font-size: 0.9375rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 .description_stats .main_stats {
-  align-items: center;
+  width: 25rem;
+  justify-content: space-between;
   color: white;
-  gap: 7rem;
-  margin-inline: 2rem;
+}
+.description_stats .main_stats .companies {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
 }
 .description_stats .main_stats .companies > span {
   font-family: "Lexend Deca", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 0.9375rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
+}
+.description_stats .main_stats .templates {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
 }
 .description_stats .main_stats .templates > span {
   font-family: "Lexend Deca", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 0.9375rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
 }
-.description_stats .main_stats .queries > span {
+.description_stats .main_stats .queries {
   font-family: "Inter", sans-serif;
-  font-weight: lighter;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+.description_stats .main_stats .queries > span {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
   font-size: 0.9375rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
@@ -143,7 +158,8 @@ html {
 
 .page_footer {
   position: absolute;
-  top: 40rem;
+  bottom: 0;
+  left: 50%;
 }
 .page_footer .attribution {
   font-size: 11px;

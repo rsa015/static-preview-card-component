@@ -103,9 +103,9 @@ html{
 }
 .description_stats {
     max-width: 35rem;
-    gap: 1rem;
+    place-items: center;
+    margin-inline: 4rem;
     .grow_business {
-        padding: 3rem 1rem 0 3rem;
         font-family: 'Inter', sans-serif;
         width: 25rem;
         font-weight: 700;
@@ -119,10 +119,10 @@ html{
     }
 
     .analytics_text {
-        padding: 3rem 1rem 0 3rem;
-        width: 25rem;
+        width: 24rem;
         >p {
             color: $main_paragraph;
+            place-items: start;
             font-size: 0.9375rem;
             font-family: 'Inter', sans-serif;;
             font-weight: 400;
@@ -130,33 +130,41 @@ html{
     }
 
     .main_stats {
-        // background-color: black;
-        align-items: center;
+        width: 25rem;
+        justify-content: space-between;
         color:hsl(0, 0%, 100%);
-        gap: 7rem;
-        margin-inline: 2rem;
         .companies {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
             >span{
                 font-family: 'Lexend Deca', sans-serif;
-                font-weight: lighter;
+                font-weight: 400;
                 font-size: 0.9375rem;
                 text-transform: uppercase;
                 color: $main_paragraph;
             } 
         }
         .templates {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
             >span{
                 font-family: 'Lexend Deca', sans-serif;
-                font-weight: lighter;
+                font-weight: 400;
                 font-size: 0.9375rem;
                 text-transform: uppercase;
                 color: $main_paragraph;
             }
         }
         .queries {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            text-transform: uppercase;
             >span{
-                font-family: 'Inter', sans-serif;
-                font-weight: lighter;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 400;
                 font-size: 0.9375rem;
                 text-transform: uppercase;
                 color: $main_paragraph;
@@ -167,7 +175,8 @@ html{
 
 .page_footer {
     position: absolute;
-    top: 40rem;
+    bottom: 0;
+    left: 50%;
     .attribution {
         font-size: 11px; 
         text-align: center;
